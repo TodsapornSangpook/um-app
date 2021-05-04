@@ -2,12 +2,12 @@
     <p-card class="card-login" header="Login">
         <form class="card-content-login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <span class="p-username-label">
-                <input id="username-input" type="text" pInputText formControlName="username">
                 <label for="username-input">Username</label>
+                <input id="username-input" type="text" pInputText formControlName="username">
             </span>
             <span class="p-password-label">
-                <input id="password-input" type="password" pInputText formControlName="password">
                 <label for="password-input">Password</label>
+                <input id="password-input" type="password" pInputText formControlName="password">
             </span>
             <button pButton type="submit" label="submit" [disabled]="!loginForm.valid"></button>
         </form>
