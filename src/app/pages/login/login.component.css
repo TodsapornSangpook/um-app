@@ -17,6 +17,15 @@
     row-gap: 1.5rem;
 }
 
+.con-register{
+    text-align: end;
+}
+
+.txt-register{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 input{
     width: 100%;
 }

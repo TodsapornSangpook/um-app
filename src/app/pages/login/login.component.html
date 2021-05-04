@@ -10,6 +10,9 @@
                 <input id="password-input" type="password" pInputText formControlName="password">
             </span>
             <button pButton type="submit" label="submit" [disabled]="!loginForm.valid"></button>
+            <div class="con-register">
+                <span class="txt-register" (click)="onClickRegister()">register</span>
+            </div>
         </form>
     </p-card>
     <p-toast position="top-right"></p-toast>
