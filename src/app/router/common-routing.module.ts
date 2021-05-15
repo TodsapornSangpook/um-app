@@ -12,6 +12,8 @@ import { Count2Component } from '../pages/count2/count2.component';
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from '../store/reducers/counter.reducer';
 
+import { NumberPipe } from '../pipe/number.pipe';
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -25,6 +27,7 @@ const routes: Routes = [
     RegisterComponent,
     Count1Component,
     Count2Component,
+    NumberPipe,
   ],
   imports: [
     RouterModule.forRoot(routes),

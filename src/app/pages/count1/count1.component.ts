@@ -15,6 +15,7 @@ import {
 })
 export class Count1Component implements OnInit {
   count$: Observable<number>;
+  data1 = 10;
 
   constructor(private store: Store<{ count: number }>, private router: Router) {
     this.count$ = store.select('count');
