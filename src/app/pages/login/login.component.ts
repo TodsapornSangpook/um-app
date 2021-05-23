@@ -44,4 +44,17 @@ export class LoginComponent implements OnInit {
   onClickRegister() {
     this.router.navigate(['/register']);
   }
+
+  onClickLoginOkta() {
+    const params = {
+      client_id: '0oasrlf2zY7Fi0IFJ5d6',
+      response_type: 'code',
+      scope: 'openid',
+      redirect_uri: 'http://localhost:4200/verify',
+      state: 'um-app', // generate always
+    };
+    const searchParams = new URLSearchParams(params);
+    const urlRedirect = `https://dev-67108349.okta.com/oauth2/default/v1/authorize?${searchParams.toString()}`;
+    window.location.href = urlRedirect;
+  }
 }

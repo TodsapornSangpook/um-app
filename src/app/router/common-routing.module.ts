@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'count1', component: Count1Component },
-  { path: 'count2', component: Count2Component },
+  { path: 'verify', component: Count2Component },
 ];
 
 @NgModule({
