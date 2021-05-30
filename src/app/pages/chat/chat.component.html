@@ -1,0 +1,13 @@
+<div class="root">
+    <p-card class="card">
+        <div style="height: 500px;overflow-y: auto;" #chatbox>
+            <div *ngFor="let messageData of messageList"
+                [ngClass]="messageData.userID == userID ? 'box-message-me' : 'box-message-visitor'">
+                {{messageData.message}}</div>
+        </div>
+        <div style="width: 100%;">
+            <input type="text" pInputText [(ngModel)]="message" style="width: calc(100% - 75px);" />
+            <button pButton (click)="sendMessage()">Send</button>
+        </div>
+    </p-card>
+</div>

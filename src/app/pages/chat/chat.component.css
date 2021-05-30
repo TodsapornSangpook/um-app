@@ -1,0 +1,22 @@
+
+.root{
+    padding: 5rem;
+}
+
+.box-message-visitor {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 51%;
+    background-color: rgb(194, 190, 190);
+    float: left;
+}
+
+.box-message-me {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 51%;
+    background-color: greenyellow;
+    float: right;
+}
