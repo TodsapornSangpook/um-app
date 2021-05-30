@@ -15,8 +15,12 @@ export class ChatComponent implements OnInit {
   userID: string;
 
   constructor() {
-    // this.socket = io('http://localhost:3000');
-    this.socket = io('https://node-type-api.herokuapp.com');
+    const socketUrl = 'http://localhost:3000/chat-1';
+    // const socketUrl = 'https://node-type-api.herokuapp.com'
+
+    this.socket = io(socketUrl, {
+      query: { room: 'r-1' },
+    });
     this.userID = Math.random().toString();
   }
 
